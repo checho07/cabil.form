@@ -1,0 +1,38 @@
+
+<ion-content color="primary" class="ion-padding">
+  <ion-grid  class="ion-text-center">
+    <ion-row >
+      <ion-col size="12">
+        <img src="assets/icono-cabilapp.png" alt="" width="20%">
+        <ion-text color="light">
+          <h1 >Cabil app</h1>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+          <ion-item  fill="outline" lines="none">
+            <ion-label position="floating" color="light">E-Mail <ion-text color="danger">*</ion-text></ion-label>
+            <ion-input required formControlName="email" type="text"></ion-input>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-label position="floating" color="light">Password <ion-text color="danger">*</ion-text></ion-label>
+            <ion-input required formControlName="password" type="password"></ion-input>
+          </ion-item>
+          
+          <ion-button block color="dark" type="sumbit" expand="block" [disabled]="loginForm.invalid">
+            Iniciar sesion
+          </ion-button>
+          </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+
+
+
