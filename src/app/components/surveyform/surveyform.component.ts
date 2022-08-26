@@ -150,7 +150,7 @@ export class SurveyformComponent implements OnInit {
     this.presentLoading();
 
     this.surveyService.deleteSurveyId(id).subscribe(data => {
-
+      this.encuestasFromDb = this.surveyService.getAllSurveys();
       this.presentToast('Encuesta eliminada', 'succes');
 
     },err => {
