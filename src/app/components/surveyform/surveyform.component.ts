@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { LoadingController, ToastController } from '@ionic/angular';
+import { AlertController, LoadingController, ToastController } from '@ionic/angular';
 import { Survey, _pregunta } from 'src/app/interfaces/survey';
 import { SurveyService } from 'src/app/services/survey/survey.service';
 import { Directive, HostListener, Output, EventEmitter } from '@angular/core';
@@ -31,7 +31,13 @@ export class SurveyformComponent implements OnInit {
 
   encuestasFromDb
 
-  constructor(private formBuilder: FormBuilder, private surveyService: SurveyService, private loadingController: LoadingController, private toastController: ToastController) { 
+  constructor(
+    private formBuilder: FormBuilder, 
+    private surveyService: SurveyService,
+     private loadingController: LoadingController, 
+     private toastController: ToastController,
+     private alertController: AlertController
+     ) { 
 
     this.userinfo = JSON.parse(sessionStorage.getItem('userInfo'))?.user?.email;
 
@@ -139,11 +145,26 @@ export class SurveyformComponent implements OnInit {
     }
   }
 
+  deleteSurvey(id){
+
+    this.presentLoading();
+
+    this.surveyService.deleteSurveyId(id).subscribe(data => {
+
+      this.presentToast('Encuesta eliminada', 'succes');
+
+    },err => {
+      this.presentToast(err, 'danger')
+    })
+
+    console.log(id)
+  }
+
   async presentToast(text,color) {
     const toast = await this.toastController.create({
       message: text,
       duration: 2000,
-      color:color
+      color:`${color}`
     });
     toast.present();
   }
@@ -195,4 +216,30 @@ export class SurveyformComponent implements OnInit {
     }
   }
 
+  async presentAlertConfirm(id) {
+    const alert = await this.alertController.create({
+      header: '¿Desea eliminar esta encuesta?',
+      message: ' <strong>Esta encuesta se borrará de forma permanente</strong>',
+      buttons: [
+        {
+          text: 'Cancelar',
+          role: 'cancel',
+          cssClass: 'secondary',
+          handler: () => {
+            console.log('Confirm Cancel: blah');
+          }
+        }, {
+          text: 'Si, borrar',
+          handler: () => {
+           this.deleteSurvey(id);
+          }
+        }
+      ]
+    });
+  
+    await alert.present();
+  }
+
 }
+
+
