@@ -11,9 +11,14 @@ import { AuthService } from 'src/app/services/auth.service';
 export class LoginComponent implements OnInit {
 
 
+  /**
+   * Variable que contiende el objeto del formulario 
+   */
   loginForm: FormGroup;
-  loading:any;
 
+  /**
+   * @ignore
+   */
   constructor(
     private authService: AuthService, 
     private formBuilder: FormBuilder, 
@@ -21,10 +26,12 @@ export class LoginComponent implements OnInit {
     private modalController: ModalController,
     private toastController: ToastController) {
 
-   
-
    }
 
+
+   /**
+    * Funcion para asignar los controladores del formulario, e inicializarlo 
+    */
    setupForm() {
     this.loginForm = this.formBuilder.group({
       email: ['', [Validators.email, Validators.required]],
@@ -32,10 +39,16 @@ export class LoginComponent implements OnInit {
     });
   }
 
+  /**
+   * Funcion que se ejecuta justo cuando los componentes terminanr de cargarse
+   */
   ngOnInit() {
     this.setupForm();
   }
 
+  /**
+   * Funcion que muestra un loading y permite iniciar sesion con los datos del formulario 
+   */
   login(){
 
     this.presentLoading();
@@ -51,6 +64,10 @@ export class LoginComponent implements OnInit {
 
   }
  
+  /**
+   * Funcion para presentar toaster, con mensaje especifico
+   * @param text 
+   */
   async presentToast(text) {
     const toast = await this.toastController.create({
       message: text,
@@ -60,6 +77,9 @@ export class LoginComponent implements OnInit {
     toast.present();
   }
 
+  /**
+   * Funcion para presentarß un loading
+   */
   async presentLoading() {
      const loading = await this.loadingController.create({
       message: 'Cargando...',

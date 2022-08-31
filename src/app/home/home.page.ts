@@ -10,6 +10,9 @@ import { AuthService } from '../services/auth.service';
 })
 export class HomePage {
 
+  /**
+   * @ignore
+   */
   constructor(private modalController: ModalController, private authService:AuthService) {
 
     var userInfo = sessionStorage.getItem('userInfo')
@@ -22,7 +25,9 @@ export class HomePage {
 
   }
 
-
+  /**
+   * Funcion que sirve para presentar la ventana modal del lOGIN
+   */
   async presentModal() {
     const modal = await this.modalController.create({
     component: LoginComponent,
@@ -36,6 +41,9 @@ export class HomePage {
   
   }
 
+  /**
+   * Funcion que sirve ara terminar sesion
+   */
   logout(){
     this.authService.logout();
     this.presentModal();

@@ -1,0 +1,1686 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>cabilForm documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">cabilForm documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  SurveyformComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/surveyform/surveyform.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-surveyform</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./surveyform.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./surveyform.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#btnpreguntasdisabled" >btnpreguntasdisabled</a>
+                            </li>
+                            <li>
+                                <a href="#dataFromSheet" >dataFromSheet</a>
+                            </li>
+                            <li>
+                                <a href="#encuestasFromDb" >encuestasFromDb</a>
+                            </li>
+                            <li>
+                                <a href="#htmlToAdd" >htmlToAdd</a>
+                            </li>
+                            <li>
+                                <a href="#pregunta" >pregunta</a>
+                            </li>
+                            <li>
+                                <a href="#preguntaObj" >preguntaObj</a>
+                            </li>
+                            <li>
+                                <a href="#preguntas" >preguntas</a>
+                            </li>
+                            <li>
+                                <a href="#surveyForm" >surveyForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#userinfo" >userinfo</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#createSurvey" >createSurvey</a>
+                            </li>
+                            <li>
+                                <a href="#createSurveyFromExcel" >createSurveyFromExcel</a>
+                            </li>
+                            <li>
+                                <a href="#deleteSurvey" >deleteSurvey</a>
+                            </li>
+                            <li>
+                                <a href="#onChange" >onChange</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#presentAlertConfirm" >presentAlertConfirm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#presentLoading" >presentLoading</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#presentToast" >presentToast</a>
+                            </li>
+                            <li>
+                                <a href="#readFile" >readFile</a>
+                            </li>
+                            <li>
+                                <a href="#saveQuestion" >saveQuestion</a>
+                            </li>
+                            <li>
+                                <a href="#setupForm" >setupForm</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createSurvey"></a>
+                    <span class="name">
+                        <span ><b>createSurvey</b></span>
+                        <a href="#createSurvey"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createSurvey()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="101"
+                            class="link-to-prism">src/app/components/surveyform/surveyform.component.ts:101</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Funcion que presenta un loading, luego ejecuta un servicio para guardar la encuesta en base de datos</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createSurveyFromExcel"></a>
+                    <span class="name">
+                        <span ><b>createSurveyFromExcel</b></span>
+                        <a href="#createSurveyFromExcel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createSurveyFromExcel()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="125"
+                            class="link-to-prism">src/app/components/surveyform/surveyform.component.ts:125</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>funcion ue toma la data de la hoja de excel, luego la mapea y la tipea en el formato adecuado
+para luego invocar el servicio para guardarla en la base de datos</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteSurvey"></a>
+                    <span class="name">
+                        <span ><b>deleteSurvey</b></span>
+                        <a href="#deleteSurvey"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteSurvey(id)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="194"
+                            class="link-to-prism">src/app/components/surveyform/surveyform.component.ts:194</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Funcion que sirve para eliminar una encuesta de la base de datos, por medio del ID</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>ID de la encuesta que servira para referencia en la BD de firebase</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onChange"></a>
+                    <span class="name">
+                        <span ><b>onChange</b></span>
+                        <a href="#onChange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onChange(target)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="240"
+                            class="link-to-prism">src/app/components/surveyform/surveyform.component.ts:240</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Funcion que se ejecuta cuando se selecciona un archivo de excel</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>target</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>datos del archvio obtenido por que input</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="presentAlertConfirm"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>presentAlertConfirm</b></span>
+                        <a href="#presentAlertConfirm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>presentAlertConfirm(id)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="278"
+                            class="link-to-prism">src/app/components/surveyform/surveyform.component.ts:278</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Funcion para presentar una alerta de confimarcion cuando se elimina una encuesta</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="presentLoading"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>presentLoading</b></span>
+                        <a href="#presentLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>presentLoading()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="226"
+                            class="link-to-prism">src/app/components/surveyform/surveyform.component.ts:226</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Funcion que muestra un loading que dura 2 segundos</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="presentToast"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>presentToast</b></span>
+                        <a href="#presentToast"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>presentToast(text, color)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="214"
+                            class="link-to-prism">src/app/components/surveyform/surveyform.component.ts:214</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Funcion para presentar un toaster con texto y color especifico</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>text</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>mensaje que llevara el toaster</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>color</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Color que llevara el toaster</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="readFile"></a>
+                    <span class="name">
+                        <span ><b>readFile</b></span>
+                        <a href="#readFile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>readFile(file: File)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="253"
+                            class="link-to-prism">src/app/components/surveyform/surveyform.component.ts:253</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Funcion que toma como parametro el archvio seleccionado, y se ejecutan los pasos para leer y mapear la data de excel a JSON</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>file</td>
+                                    <td>
+                                            <code>File</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveQuestion"></a>
+                    <span class="name">
+                        <span ><b>saveQuestion</b></span>
+                        <a href="#saveQuestion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveQuestion()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="168"
+                            class="link-to-prism">src/app/components/surveyform/surveyform.component.ts:168</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Funcion que sirve para guardar preguntas de forma manual</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setupForm"></a>
+                    <span class="name">
+                        <span ><b>setupForm</b></span>
+                        <a href="#setupForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setupForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="88"
+                            class="link-to-prism">src/app/components/surveyform/surveyform.component.ts:88</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Funcion para asignar los controladores del formulario, e inicializarlo</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="btnpreguntasdisabled"></a>
+                    <span class="name">
+                        <span ><b>btnpreguntasdisabled</b></span>
+                        <a href="#btnpreguntasdisabled"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/components/surveyform/surveyform.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Variable temporal para determinar estado de la encuesta a guardar</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dataFromSheet"></a>
+                    <span class="name">
+                        <span ><b>dataFromSheet</b></span>
+                        <a href="#dataFromSheet"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/components/surveyform/surveyform.component.ts:57</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Varaible que contendra la informacion de la hoja de excel</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="encuestasFromDb"></a>
+                    <span class="name">
+                        <span ><b>encuestasFromDb</b></span>
+                        <a href="#encuestasFromDb"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/components/surveyform/surveyform.component.ts:62</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Variable que obtendra de firebase las encuestas guardadas</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="htmlToAdd"></a>
+                    <span class="name">
+                        <span ><b>htmlToAdd</b></span>
+                        <a href="#htmlToAdd"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/components/surveyform/surveyform.component.ts:52</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pregunta"></a>
+                    <span class="name">
+                        <span ><b>pregunta</b></span>
+                        <a href="#pregunta"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>1</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/components/surveyform/surveyform.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Varaible temporal para guardar las preguntas de la encuesta</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="preguntaObj"></a>
+                    <span class="name">
+                        <span ><b>preguntaObj</b></span>
+                        <a href="#preguntaObj"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/_pregunta.html" target="_self" >_pregunta</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    id : this.pregunta,
+    text: &#x27;&#x27;,
+    options: [&#x27;&#x27;,&#x27;&#x27;,&#x27;&#x27;]
+
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/components/surveyform/surveyform.component.ts:45</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Objeto inicializador tipado para guardar la encuesta a enviar a base de datos</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="preguntas"></a>
+                    <span class="name">
+                        <span ><b>preguntas</b></span>
+                        <a href="#preguntas"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/components/surveyform/surveyform.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Array que guardara las preguntas que se van a enviar a la base de datos</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="surveyForm"></a>
+                    <span class="name">
+                        <span ><b>surveyForm</b></span>
+                        <a href="#surveyForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/components/surveyform/surveyform.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Variable que contiende el objeto del formulario</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userinfo"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>userinfo</b></span>
+                        <a href="#userinfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/components/surveyform/surveyform.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Variable que obtiene los datos del usuario guardados durante el login</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { AlertController, LoadingController, ToastController } from &#x27;@ionic/angular&#x27;;
+import { Survey, _pregunta } from &#x27;src/app/interfaces/survey&#x27;;
+import { SurveyService } from &#x27;src/app/services/survey/survey.service&#x27;;
+import { Directive, HostListener, Output, EventEmitter } from &#x27;@angular/core&#x27;;
+import { Observable, Subscriber } from &#x27;rxjs&#x27;;
+import * as XLSX from &#x27;xlsx&#x27;;
+
+@Component({
+  selector: &#x27;app-surveyform&#x27;,
+  templateUrl: &#x27;./surveyform.component.html&#x27;,
+  styleUrls: [&#x27;./surveyform.component.scss&#x27;],
+})
+export class SurveyformComponent implements OnInit {
+
+ /**
+   * Variable que contiende el objeto del formulario 
+   */
+  surveyForm: FormGroup;
+
+  /**
+   * Variable que obtiene los datos del usuario guardados durante el login
+   */
+  private userinfo;
+
+  /**
+   * Varaible temporal para guardar las preguntas de la encuesta
+   */
+  pregunta &#x3D; 1;
+
+  /**
+   * Array que guardara las preguntas que se van a enviar a la base de datos
+   */
+  preguntas &#x3D; [];
+
+  /**
+   * Variable temporal para determinar estado de la encuesta a guardar
+   */
+  btnpreguntasdisabled &#x3D; false;
+
+  /**
+   * Objeto inicializador tipado para guardar la encuesta a enviar a base de datos
+   */
+  preguntaObj: _pregunta &#x3D; {
+    id : this.pregunta,
+    text: &#x27;&#x27;,
+    options: [&#x27;&#x27;,&#x27;&#x27;,&#x27;&#x27;]
+
+  }
+
+  htmlToAdd:any;
+
+  /**
+   * Varaible que contendra la informacion de la hoja de excel
+   */
+  dataFromSheet:any;
+
+  /**
+   * Variable que obtendra de firebase las encuestas guardadas
+   */
+  encuestasFromDb
+
+
+  /**
+   * @ignore
+   */
+  constructor(
+    private formBuilder: FormBuilder, 
+    private surveyService: SurveyService,
+     private loadingController: LoadingController, 
+     private toastController: ToastController,
+     private alertController: AlertController
+     ) { 
+
+    this.userinfo &#x3D; JSON.parse(sessionStorage.getItem(&#x27;userInfo&#x27;))?.user?.email;
+
+
+    this.setupForm();
+
+    this.encuestasFromDb &#x3D; this.surveyService.getAllSurveys();
+
+  }
+
+ /**
+    * Funcion para asignar los controladores del formulario, e inicializarlo 
+    */
+  setupForm() {
+    this.surveyForm &#x3D; this.formBuilder.group({
+      id: [&#x27;&#x27;, [ Validators.required]],
+      name: [&#x27;&#x27;, [ Validators.required]],
+      fecha_creacion: [new Date() ],
+      creado_por: [this.userinfo],
+      activo:[true,[Validators.required]]
+    });
+  }
+
+  /**
+   * Funcion que presenta un loading, luego ejecuta un servicio para guardar la encuesta en base de datos
+   */
+  createSurvey(){
+
+    this.presentLoading();
+
+    var surveyToSave: Survey &#x3D; {
+      ...this.surveyForm.value,
+      preguntas: this.preguntas
+    }
+
+    this.surveyService.createSurvey(surveyToSave).subscribe(res &#x3D;&gt; {
+      this.surveyForm.reset();
+      this.presentToast(&#x27;Encuesta guardada&#x27;,&#x27;success&#x27;);
+
+    }, err &#x3D;&gt; {
+      this.presentToast(err,&#x27;danger&#x27;);
+    })
+
+
+  }
+
+  /**
+   * funcion ue toma la data de la hoja de excel, luego la mapea y la tipea en el formato adecuado
+   * para luego invocar el servicio para guardarla en la base de datos
+   */
+  createSurveyFromExcel(){
+
+    this.presentLoading();
+
+    var survey &#x3D; {} as Survey 
+
+    survey.id &#x3D; this.dataFromSheet[0].id;
+    survey.name &#x3D; this.dataFromSheet[0].nombre;
+    survey.activo &#x3D; true;
+    survey.creado_por &#x3D; this.userinfo;
+    survey.fecha_creacion &#x3D; new Date();
+    survey.preguntas &#x3D; [{}as _pregunta];
+
+
+    this.dataFromSheet.forEach((element,index) &#x3D;&gt; {
+
+      if(index &#x3D;&#x3D; 0){
+        survey.preguntas.pop();
+      }
+
+      var obj: _pregunta &#x3D; {
+        id:index+1,
+        text: element.pregunta,
+        options:[element.opcion1, element.opcion2, element.opcion3] 
+      }
+      survey.preguntas.push(obj);
+     
+    });
+
+    this.surveyService.createSurvey(survey).subscribe(res &#x3D;&gt; {
+      this.dataFromSheet &#x3D; null;
+      this.encuestasFromDb &#x3D; this.surveyService.getAllSurveys();
+      this.presentToast(&#x27;Encuesta guardada&#x27;,&#x27;success&#x27;);
+
+    }, err &#x3D;&gt; {
+      this.presentToast(err,&#x27;danger&#x27;);
+    })
+
+  }
+
+  /**
+   * Funcion que sirve para guardar preguntas de forma manual
+   */
+  saveQuestion(){
+
+    this.preguntaObj.id &#x3D; this.pregunta;
+
+    if(this.pregunta &lt;&#x3D; 12){
+
+      this.pregunta &#x3D; this.pregunta +1;
+      
+      this.preguntas.push(this.preguntaObj);
+
+      this.preguntaObj &#x3D; {
+        id : this.pregunta,
+        text: &#x27;&#x27;,
+        options: new Array(3)
+    
+      }
+      
+    }else{
+      
+    }
+  }
+
+  /**
+   * Funcion que sirve para eliminar una encuesta de la base de datos, por medio del ID
+   * @param {string} id ID de la encuesta que servira para referencia en la BD de firebase
+   */
+  deleteSurvey(id){
+
+    this.presentLoading();
+
+    this.surveyService.deleteSurveyId(id).subscribe(data &#x3D;&gt; {
+      this.encuestasFromDb &#x3D; this.surveyService.getAllSurveys();
+      this.presentToast(&#x27;Encuesta eliminada&#x27;, &#x27;succes&#x27;);
+
+    },err &#x3D;&gt; {
+      this.presentToast(err, &#x27;danger&#x27;)
+    })
+
+    console.log(id)
+  }
+
+  /**
+   * Funcion para presentar un toaster con texto y color especifico
+   * @param {string} text mensaje que llevara el toaster
+   * @param {string} color  Color que llevara el toaster
+   */
+  async presentToast(text,color) {
+    const toast &#x3D; await this.toastController.create({
+      message: text,
+      duration: 2000,
+      color:&#x60;${color}&#x60;
+    });
+    toast.present();
+  }
+
+  /**
+   * Funcion que muestra un loading que dura 2 segundos
+   */
+  async presentLoading() {
+    const loading &#x3D; await this.loadingController.create({
+      message: &#x27;Guardando&#x27;,
+      duration: 2000,
+      spinner: &#x27;bubbles&#x27;
+    });
+    await loading.present();
+  }
+
+
+  /**
+   * Funcion que se ejecuta cuando se selecciona un archivo de excel
+   * @param target datos del archvio obtenido por que input
+   */
+  onChange(target){
+
+    const file &#x3D; target.target.files[0];
+
+    this.readFile(file);
+ 
+  }
+
+
+  /**
+   * Funcion que toma como parametro el archvio seleccionado, y se ejecutan los pasos para leer y mapear la data de excel a JSON
+   * @param file 
+   */
+  readFile(file:File, ){
+
+    const fileReader &#x3D; new FileReader();
+
+    fileReader.readAsArrayBuffer(file);
+
+    fileReader.onload &#x3D; (e) &#x3D;&gt; {
+      const bufferArray &#x3D; e.target.result;
+
+      const wb: XLSX.WorkBook &#x3D; XLSX.read(bufferArray);
+
+      const wsname:string &#x3D;  wb.SheetNames[0];
+
+      const ws:XLSX.WorkSheet &#x3D; wb.Sheets[wsname];
+
+      this.dataFromSheet &#x3D; XLSX.utils.sheet_to_json(ws);
+
+
+
+    }
+  }
+
+  /***
+   * Funcion para presentar una alerta de confimarcion cuando se elimina una encuesta
+   */
+  async presentAlertConfirm(id) {
+    const alert &#x3D; await this.alertController.create({
+      header: &#x27;¿Desea eliminar esta encuesta?&#x27;,
+      message: &#x27; &lt;strong&gt;Esta encuesta se borrará de forma permanente&lt;/strong&gt;&#x27;,
+      buttons: [
+        {
+          text: &#x27;Cancelar&#x27;,
+          role: &#x27;cancel&#x27;,
+          cssClass: &#x27;secondary&#x27;,
+          handler: () &#x3D;&gt; {
+            console.log(&#x27;Confirm Cancel: blah&#x27;);
+          }
+        }, {
+          text: &#x27;Si, borrar&#x27;,
+          handler: () &#x3D;&gt; {
+           this.deleteSurvey(id);
+          }
+        }
+      ]
+    });
+  
+    await alert.present();
+  }
+
+}
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">
+
+
+&lt;ion-card&gt;
+
+  &lt;ion-card-header&gt;
+    &lt;ion-card-title&gt;Crear encuesta - excel&lt;/ion-card-title&gt;
+  &lt;/ion-card-header&gt;
+  &lt;ion-card-content&gt;
+   
+    &lt;input type&#x3D;&quot;file&quot; name&#x3D;&quot;&quot; id&#x3D;&quot;&quot; (change)&#x3D;&quot;onChange($event)&quot;&gt;
+
+    &lt;ion-grid fixed class&#x3D;&quot;one&quot; &gt;
+      &lt;ion-row *ngIf&#x3D;&quot;dataFromSheet&quot;&gt;
+        &lt;ion-col size&#x3D;&quot;6&quot;&gt;ID&lt;/ion-col&gt;
+        &lt;ion-col  size&#x3D;&quot;6&quot;&gt;&lt;strong&gt; {{dataFromSheet[0]?.id}} &lt;/strong&gt;&lt;/ion-col&gt;
+      &lt;/ion-row&gt;
+      &lt;ion-row *ngIf&#x3D;&quot;dataFromSheet&quot;&gt;
+        &lt;ion-col size&#x3D;&quot;6&quot;&gt;Nombre Encuesta&lt;/ion-col&gt;
+        &lt;ion-col size&#x3D;&quot;6&quot;&gt; &lt;strong&gt;{{dataFromSheet[0]?.nombre}}&lt;/strong&gt;&lt;/ion-col&gt;
+      &lt;/ion-row&gt;
+      &lt;ion-row &gt;
+        &lt;ion-col size&#x3D;&quot;3&quot;&gt;Pregunta&lt;/ion-col&gt;
+        &lt;ion-col size&#x3D;&quot;3&quot;&gt;Opcion 1&lt;/ion-col&gt;
+        &lt;ion-col size&#x3D;&quot;3&quot;&gt;Opcion 2&lt;/ion-col&gt;
+        &lt;ion-col size&#x3D;&quot;3&quot;&gt;Opcion 3&lt;/ion-col&gt;
+      &lt;/ion-row&gt;
+  
+      &lt;ion-row *ngFor&#x3D;&quot;let item of dataFromSheet&quot;&gt;
+        &lt;ion-col size&#x3D;&quot;3&quot;&gt;{{item.pregunta}}&lt;/ion-col&gt;
+        &lt;ion-col size&#x3D;&quot;3&quot;&gt;{{item.opcion1}}&lt;/ion-col&gt;
+        &lt;ion-col size&#x3D;&quot;3&quot;&gt;{{item.opcion2}}&lt;/ion-col&gt;
+        &lt;ion-col size&#x3D;&quot;3&quot;&gt;{{item.opcion3}}&lt;/ion-col&gt;
+      &lt;/ion-row&gt;
+
+      &lt;ion-row *ngIf&#x3D;&quot;dataFromSheet&quot;&gt;
+        &lt;ion-col size&#x3D;&quot;12&quot;&gt;
+          &lt;ion-button (click)&#x3D;&quot;createSurveyFromExcel()&quot; expand&#x3D;&quot;block&quot; fill&#x3D;&quot;solid&quot; &gt;
+            Guardar encuesta
+          &lt;/ion-button&gt;
+        &lt;/ion-col&gt;
+      &lt;/ion-row&gt;
+
+    &lt;/ion-grid&gt;
+
+  &lt;/ion-card-content&gt;
+&lt;/ion-card&gt;
+
+
+
+&lt;!-- &lt;ion-card class&#x3D;&quot;ion-padding&quot;&gt;
+
+  &lt;ion-card-header&gt;
+    &lt;ion-card-title&gt;Crear encuesta - manual&lt;/ion-card-title&gt;
+  &lt;/ion-card-header&gt;
+  &lt;ion-card-content&gt;
+    
+
+    
+
+    
+    
+    &lt;form [formGroup]&#x3D;&quot;surveyForm&quot; (ngSubmit)&#x3D;&quot;createSurvey()&quot;  *ngIf&#x3D;&quot;!dataFromSheet&quot;&gt;
+      &lt;ion-item class&#x3D;&quot;ion-margin-vertical&quot;&gt;
+        &lt;ion-label position&#x3D;&quot;floating&quot;&gt;ID &lt;ion-text color&#x3D;&quot;danger&quot;&gt;*&lt;/ion-text&gt;&lt;/ion-label&gt;
+        &lt;ion-input required formControlName&#x3D;&quot;id&quot; type&#x3D;&quot;number&quot;&gt;&lt;/ion-input&gt;
+      &lt;/ion-item&gt;
+      
+      &lt;ion-item class&#x3D;&quot;ion-margin-vertical&quot;&gt;
+        &lt;ion-label position&#x3D;&quot;floating&quot;&gt;Nombre de la encuesta &lt;ion-text color&#x3D;&quot;danger&quot;&gt;*&lt;/ion-text&gt;&lt;/ion-label&gt;
+        &lt;ion-input class&#x3D;&quot;ion-text-wrap&quot; required formControlName&#x3D;&quot;name&quot; type&#x3D;&quot;text&quot;&gt;&lt;/ion-input&gt;
+      &lt;/ion-item&gt;
+      
+      &lt;ion-item class&#x3D;&quot;ion-margin-vertical&quot;&gt;
+        &lt;ion-label &gt;Encuesta activa &lt;ion-text color&#x3D;&quot;danger&quot;&gt;*&lt;/ion-text&gt;&lt;/ion-label&gt;
+        &lt;ion-toggle required formControlName&#x3D;&quot;activo&quot;&gt;&lt;/ion-toggle&gt;
+      &lt;/ion-item&gt;
+    &lt;/form&gt;
+
+    &lt;ion-card [disabled]&#x3D;&quot;pregunta &gt;12&quot; *ngIf&#x3D;&quot;!dataFromSheet&quot;&gt;
+      &lt;ion-item-divider&gt;
+        &lt;ion-label&gt;Preguntas y respuestas&lt;/ion-label&gt;
+      &lt;/ion-item-divider&gt;
+      
+      &lt;ion-item&gt;
+        &lt;ion-label&gt;Pregunta # {{pregunta}} de 12:&lt;/ion-label&gt;
+        &lt;ion-input type&#x3D;&quot;text&quot; [(ngModel)]&#x3D;&quot;preguntaObj.text&quot;&gt;&lt;/ion-input&gt;
+      &lt;/ion-item&gt;
+
+      &lt;ion-item&gt;
+        &lt;ion-label&gt;Opcion 1:&lt;/ion-label&gt;
+        &lt;ion-input type&#x3D;&quot;text&quot; [(ngModel)]&#x3D;&quot;preguntaObj.options[0]&quot; &gt;&lt;/ion-input&gt;
+      &lt;/ion-item&gt;
+      &lt;ion-item&gt;
+        &lt;ion-label&gt;Opcion 2:&lt;/ion-label&gt;
+        &lt;ion-input type&#x3D;&quot;text&quot; [(ngModel)]&#x3D;&quot;preguntaObj.options[1]&quot; &gt;&lt;/ion-input&gt;
+      &lt;/ion-item&gt;
+      &lt;ion-item&gt;
+        &lt;ion-label&gt;Opcion 3:&lt;/ion-label&gt;
+        &lt;ion-input type&#x3D;&quot;text&quot; [(ngModel)]&#x3D;&quot;preguntaObj.options[2]&quot; &gt;&lt;/ion-input&gt;
+      &lt;/ion-item&gt;
+      &lt;ion-button *ngIf&#x3D;&quot;pregunta &lt;&#x3D; 12&quot; class&#x3D;&quot;ion-margin&quot; (click)&#x3D;&quot;saveQuestion()&quot; fill&#x3D;&quot;outline&quot; [disabled]&#x3D;&quot; preguntaObj.text &#x3D;&#x3D; &#x27;&#x27;  || preguntaObj.options[0] &#x3D;&#x3D; &#x27;&#x27; || preguntaObj.options[1] &#x3D;&#x3D; &#x27;&#x27; || preguntaObj.options[2] &#x3D;&#x3D; &#x27;&#x27;&quot; &gt;
+        Guardar pregunta
+      &lt;/ion-button&gt;
+    &lt;/ion-card&gt;
+  &lt;/ion-card-content&gt;
+
+  &lt;ion-button expand&#x3D;&quot;block&quot; class&#x3D;&quot;ion-margin&quot; color&#x3D;&quot;primary&quot; type&#x3D;&quot;submit&quot; (click)&#x3D;&quot;createSurvey()&quot; [disabled]&#x3D;&quot;surveyForm.invalid || pregunta &lt;&#x3D; 12&quot;&gt;
+    Guardar encuesta
+  &lt;/ion-button&gt;
+  
+&lt;/ion-card&gt; --&gt;
+
+&lt;ion-card&gt;
+  &lt;ion-card-header&gt;
+    &lt;ion-card-title&gt;Lista de encuestas&lt;/ion-card-title&gt;
+  &lt;/ion-card-header&gt;
+  
+  &lt;ion-card-content&gt;
+    &lt;ion-card *ngFor&#x3D;&quot;let encuesta of encuestasFromDb | async&quot; &gt;
+     &lt;ion-card-header&gt;
+      &lt;ion-card-subtitle&gt;ID: {{encuesta.data.id}}&lt;/ion-card-subtitle&gt;
+      &lt;ion-card-title&gt;Nombre:{{encuesta.data.name}}&lt;/ion-card-title&gt;
+    &lt;/ion-card-header&gt;
+    &lt;ion-card-content&gt;
+        &lt;ion-row&gt;
+          &lt;ion-col size&#x3D;&quot;6&quot;&gt;
+            &lt;span &gt;
+              &lt;p&gt;Creada por:{{encuesta.data.creado_por}}&lt;/p&gt;
+              &lt;p&gt;Fecha de creación {{encuesta.data.fecha_creacion}} &lt;/p&gt;
+             &lt;/span&gt;
+          &lt;/ion-col&gt;
+          &lt;ion-col size&#x3D;&quot;6&quot;&gt;
+            &lt;ion-button  color&#x3D;&quot;danger&quot;(click)&#x3D;&quot;presentAlertConfirm(encuesta.id)&quot; &gt;
+              &lt;ion-icon slot&#x3D;&quot;icon-only&quot; name&#x3D;&quot;close&quot;&gt;&lt;/ion-icon&gt;
+              Borrar
+             &lt;/ion-button&gt;
+          &lt;/ion-col&gt;
+        &lt;/ion-row&gt;   
+      &lt;/ion-card-content&gt;
+    &lt;/ion-card&gt;
+  &lt;/ion-card-content&gt;
+&lt;/ion-card&gt;
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./surveyform.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">
+.one{
+  
+      ion-col {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+    //   ion-row:nth-child(even) {
+    //     background-color: #dddddd;
+    //   }  
+
+}
+
+      
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-card>  <ion-card-header>    <ion-card-title>Crear encuesta - excel</ion-card-title>  </ion-card-header>  <ion-card-content>       <input type="file" name="" id="" (change)="onChange($event)">    <ion-grid fixed class="one" >      <ion-row *ngIf="dataFromSheet">        <ion-col size="6">ID</ion-col>        <ion-col  size="6"><strong> {{dataFromSheet[0]?.id}} </strong></ion-col>      </ion-row>      <ion-row *ngIf="dataFromSheet">        <ion-col size="6">Nombre Encuesta</ion-col>        <ion-col size="6"> <strong>{{dataFromSheet[0]?.nombre}}</strong></ion-col>      </ion-row>      <ion-row >        <ion-col size="3">Pregunta</ion-col>        <ion-col size="3">Opcion 1</ion-col>        <ion-col size="3">Opcion 2</ion-col>        <ion-col size="3">Opcion 3</ion-col>      </ion-row>        <ion-row *ngFor="let item of dataFromSheet">        <ion-col size="3">{{item.pregunta}}</ion-col>        <ion-col size="3">{{item.opcion1}}</ion-col>        <ion-col size="3">{{item.opcion2}}</ion-col>        <ion-col size="3">{{item.opcion3}}</ion-col>      </ion-row>      <ion-row *ngIf="dataFromSheet">        <ion-col size="12">          <ion-button (click)="createSurveyFromExcel()" expand="block" fill="solid" >            Guardar encuesta          </ion-button>        </ion-col>      </ion-row>    </ion-grid>  </ion-card-content></ion-card><!-- <ion-card class="ion-padding">  <ion-card-header>    <ion-card-title>Crear encuesta - manual</ion-card-title>  </ion-card-header>  <ion-card-content>                    <form [formGroup]="surveyForm" (ngSubmit)="createSurvey()"  *ngIf="!dataFromSheet">      <ion-item class="ion-margin-vertical">        <ion-label position="floating">ID <ion-text color="danger">*</ion-text></ion-label>        <ion-input required formControlName="id" type="number"></ion-input>      </ion-item>            <ion-item class="ion-margin-vertical">        <ion-label position="floating">Nombre de la encuesta <ion-text color="danger">*</ion-text></ion-label>        <ion-input class="ion-text-wrap" required formControlName="name" type="text"></ion-input>      </ion-item>            <ion-item class="ion-margin-vertical">        <ion-label >Encuesta activa <ion-text color="danger">*</ion-text></ion-label>        <ion-toggle required formControlName="activo"></ion-toggle>      </ion-item>    </form>    <ion-card [disabled]="pregunta >12" *ngIf="!dataFromSheet">      <ion-item-divider>        <ion-label>Preguntas y respuestas</ion-label>      </ion-item-divider>            <ion-item>        <ion-label>Pregunta # {{pregunta}} de 12:</ion-label>        <ion-input type="text" [(ngModel)]="preguntaObj.text"></ion-input>      </ion-item>      <ion-item>        <ion-label>Opcion 1:</ion-label>        <ion-input type="text" [(ngModel)]="preguntaObj.options[0]" ></ion-input>      </ion-item>      <ion-item>        <ion-label>Opcion 2:</ion-label>        <ion-input type="text" [(ngModel)]="preguntaObj.options[1]" ></ion-input>      </ion-item>      <ion-item>        <ion-label>Opcion 3:</ion-label>        <ion-input type="text" [(ngModel)]="preguntaObj.options[2]" ></ion-input>      </ion-item>      <ion-button *ngIf="pregunta <= 12" class="ion-margin" (click)="saveQuestion()" fill="outline" [disabled]=" preguntaObj.text == \'\'  || preguntaObj.options[0] == \'\' || preguntaObj.options[1] == \'\' || preguntaObj.options[2] == \'\'" >        Guardar pregunta      </ion-button>    </ion-card>  </ion-card-content>  <ion-button expand="block" class="ion-margin" color="primary" type="submit" (click)="createSurvey()" [disabled]="surveyForm.invalid || pregunta <= 12">    Guardar encuesta  </ion-button>  </ion-card> --><ion-card>  <ion-card-header>    <ion-card-title>Lista de encuestas</ion-card-title>  </ion-card-header>    <ion-card-content>    <ion-card *ngFor="let encuesta of encuestasFromDb | async" >     <ion-card-header>      <ion-card-subtitle>ID: {{encuesta.data.id}}</ion-card-subtitle>      <ion-card-title>Nombre:{{encuesta.data.name}}</ion-card-title>    </ion-card-header>    <ion-card-content>        <ion-row>          <ion-col size="6">            <span >              <p>Creada por:{{encuesta.data.creado_por}}</p>              <p>Fecha de creación {{encuesta.data.fecha_creacion}} </p>             </span>          </ion-col>          <ion-col size="6">            <ion-button  color="danger"(click)="presentAlertConfirm(encuesta.id)" >              <ion-icon slot="icon-only" name="close"></ion-icon>              Borrar             </ion-button>          </ion-col>        </ion-row>         </ion-card-content>    </ion-card>  </ion-card-content></ion-card></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'SurveyformComponent', 'selector': 'app-surveyform'}];
+    var DIRECTIVES = [{'name': 'ExcelreaderDirective', 'selector': '[appExcelreader]'}];
+    var ACTUAL_COMPONENT = {'name': 'SurveyformComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SurveyformComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

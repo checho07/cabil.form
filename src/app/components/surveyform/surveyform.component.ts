@@ -14,11 +14,34 @@ import * as XLSX from 'xlsx';
 })
 export class SurveyformComponent implements OnInit {
 
+ /**
+   * Variable que contiende el objeto del formulario 
+   */
   surveyForm: FormGroup;
+
+  /**
+   * Variable que obtiene los datos del usuario guardados durante el login
+   */
   private userinfo;
+
+  /**
+   * Varaible temporal para guardar las preguntas de la encuesta
+   */
   pregunta = 1;
+
+  /**
+   * Array que guardara las preguntas que se van a enviar a la base de datos
+   */
   preguntas = [];
+
+  /**
+   * Variable temporal para determinar estado de la encuesta a guardar
+   */
   btnpreguntasdisabled = false;
+
+  /**
+   * Objeto inicializador tipado para guardar la encuesta a enviar a base de datos
+   */
   preguntaObj: _pregunta = {
     id : this.pregunta,
     text: '',
@@ -27,10 +50,21 @@ export class SurveyformComponent implements OnInit {
   }
 
   htmlToAdd:any;
+
+  /**
+   * Varaible que contendra la informacion de la hoja de excel
+   */
   dataFromSheet:any;
 
+  /**
+   * Variable que obtendra de firebase las encuestas guardadas
+   */
   encuestasFromDb
 
+
+  /**
+   * @ignore
+   */
   constructor(
     private formBuilder: FormBuilder, 
     private surveyService: SurveyService,
@@ -48,11 +82,9 @@ export class SurveyformComponent implements OnInit {
 
   }
 
-  ngOnInit() {
-
-  }
-
-
+ /**
+    * Funcion para asignar los controladores del formulario, e inicializarlo 
+    */
   setupForm() {
     this.surveyForm = this.formBuilder.group({
       id: ['', [ Validators.required]],
@@ -63,6 +95,9 @@ export class SurveyformComponent implements OnInit {
     });
   }
 
+  /**
+   * Funcion que presenta un loading, luego ejecuta un servicio para guardar la encuesta en base de datos
+   */
   createSurvey(){
 
     this.presentLoading();
@@ -83,6 +118,10 @@ export class SurveyformComponent implements OnInit {
 
   }
 
+  /**
+   * funcion ue toma la data de la hoja de excel, luego la mapea y la tipea en el formato adecuado
+   * para luego invocar el servicio para guardarla en la base de datos
+   */
   createSurveyFromExcel(){
 
     this.presentLoading();
@@ -123,6 +162,9 @@ export class SurveyformComponent implements OnInit {
 
   }
 
+  /**
+   * Funcion que sirve para guardar preguntas de forma manual
+   */
   saveQuestion(){
 
     this.preguntaObj.id = this.pregunta;
@@ -145,6 +187,10 @@ export class SurveyformComponent implements OnInit {
     }
   }
 
+  /**
+   * Funcion que sirve para eliminar una encuesta de la base de datos, por medio del ID
+   * @param {string} id ID de la encuesta que servira para referencia en la BD de firebase
+   */
   deleteSurvey(id){
 
     this.presentLoading();
@@ -160,6 +206,11 @@ export class SurveyformComponent implements OnInit {
     console.log(id)
   }
 
+  /**
+   * Funcion para presentar un toaster con texto y color especifico
+   * @param {string} text mensaje que llevara el toaster
+   * @param {string} color  Color que llevara el toaster
+   */
   async presentToast(text,color) {
     const toast = await this.toastController.create({
       message: text,
@@ -169,6 +220,9 @@ export class SurveyformComponent implements OnInit {
     toast.present();
   }
 
+  /**
+   * Funcion que muestra un loading que dura 2 segundos
+   */
   async presentLoading() {
     const loading = await this.loadingController.create({
       message: 'Guardando',
@@ -178,22 +232,24 @@ export class SurveyformComponent implements OnInit {
     await loading.present();
   }
 
-  excelFileData(ev){
-    debugger
-    console.log(ev)
-  }
 
-
+  /**
+   * Funcion que se ejecuta cuando se selecciona un archivo de excel
+   * @param target datos del archvio obtenido por que input
+   */
   onChange(target){
 
     const file = target.target.files[0];
 
     this.readFile(file);
  
-
   }
 
 
+  /**
+   * Funcion que toma como parametro el archvio seleccionado, y se ejecutan los pasos para leer y mapear la data de excel a JSON
+   * @param file 
+   */
   readFile(file:File, ){
 
     const fileReader = new FileReader();
@@ -216,6 +272,9 @@ export class SurveyformComponent implements OnInit {
     }
   }
 
+  /***
+   * Funcion para presentar una alerta de confimarcion cuando se elimina una encuesta
+   */
   async presentAlertConfirm(id) {
     const alert = await this.alertController.create({
       header: '¿Desea eliminar esta encuesta?',
