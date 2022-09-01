@@ -323,7 +323,9 @@ export class HomePage {
 
   &lt;div id&#x3D;&quot;container&quot;&gt;
     &lt;app-surveyform&gt;&lt;/app-surveyform&gt;
-   
+
+    &lt;app-answers&gt;&lt;/app-answers&gt;
+    
   &lt;/div&gt;
 &lt;/ion-content&gt;
 </code></pre>
@@ -386,8 +388,8 @@ export class HomePage {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ion-header [translucent]="true">  <ion-toolbar color="primary">    <ion-title>      Cabil - Encuestas    </ion-title>    <ion-buttons slot="end">      <ion-button (click)="logout()">        <ion-icon slot="start" name="log-out"></ion-icon>        Salir      </ion-button>    </ion-buttons>  </ion-toolbar></ion-header><ion-content [fullscreen]="true" color="light">  <ion-header collapse="condense">    <ion-toolbar>      <ion-title size="large">Blank</ion-title>    </ion-toolbar>  </ion-header>  <div id="container">    <app-surveyform></app-surveyform>     </div></ion-content></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'SurveyformComponent', 'selector': 'app-surveyform'}];
+        var COMPONENT_TEMPLATE = '<div><ion-header [translucent]="true">  <ion-toolbar color="primary">    <ion-title>      Cabil - Encuestas    </ion-title>    <ion-buttons slot="end">      <ion-button (click)="logout()">        <ion-icon slot="start" name="log-out"></ion-icon>        Salir      </ion-button>    </ion-buttons>  </ion-toolbar></ion-header><ion-content [fullscreen]="true" color="light">  <ion-header collapse="condense">    <ion-toolbar>      <ion-title size="large">Blank</ion-title>    </ion-toolbar>  </ion-header>  <div id="container">    <app-surveyform></app-surveyform>    <app-answers></app-answers>      </div></ion-content></div>'
+    var COMPONENTS = [{'name': 'AnswersComponent', 'selector': 'app-answers'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'SurveyformComponent', 'selector': 'app-surveyform'}];
     var DIRECTIVES = [{'name': 'ExcelreaderDirective', 'selector': '[appExcelreader]'}];
     var ACTUAL_COMPONENT = {'name': 'HomePage'};
 </script>

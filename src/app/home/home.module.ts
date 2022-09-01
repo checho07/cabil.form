@@ -7,6 +7,7 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { LoginComponent } from '../components/login/login.component';
 import { SurveyformComponent } from '../components/surveyform/surveyform.component';
+import { AnswersComponent } from '../components/answers/answers.component';
 
 
 @NgModule({
@@ -17,7 +18,7 @@ import { SurveyformComponent } from '../components/surveyform/surveyform.compone
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, LoginComponent,SurveyformComponent],
+  declarations: [HomePage, LoginComponent,SurveyformComponent, AnswersComponent],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
   ],

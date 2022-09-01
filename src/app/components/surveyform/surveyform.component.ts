@@ -12,7 +12,7 @@ import * as XLSX from 'xlsx';
   templateUrl: './surveyform.component.html',
   styleUrls: ['./surveyform.component.scss'],
 })
-export class SurveyformComponent implements OnInit {
+export class SurveyformComponent  {
 
  /**
    * Variable que contiende el objeto del formulario 

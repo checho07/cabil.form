@@ -65,6 +65,14 @@ export class SurveyService {
   }
 
 
+  /**
+   * Funcion que consulta todas las respuestas de base de datos
+   * @returns retronar el array con las respeustas 
+   */
+  getAllAnswersFromDb(){
+    return this.httpClient.get(`${this.baseUrl}answers`);
+  }
+
 
 
 }

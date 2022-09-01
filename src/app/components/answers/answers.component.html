@@ -1,0 +1,131 @@
+<ion-card>
+  
+  <ion-card-header>
+    <ion-card-title>lista de respuestas</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+   
+    <ion-card *ngFor="let answer of answers">
+
+      <ion-card-header>
+        <ion-card-subtitle>ID: {{answer?.id}}</ion-card-subtitle>
+        <ion-card-title>ID respuesta: {{answer?.idRespuesta}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-row>
+          <ion-col size="6">
+            <span >
+              <p>Numero de identificacion:{{answer?.NumeroIdentificacion}}</p>
+              <p>Fecha de creación {{answer?.date_created |date}} </p>
+             </span>
+          </ion-col>
+          <ion-col size="6">
+            <ion-button  color="primary"(click)="setOpen(true,answer)" >
+              <ion-icon slot="icon-only" name="eye"></ion-icon>
+              Ver
+             </ion-button>
+          </ion-col>
+        </ion-row>  
+      </ion-card-content>
+
+    </ion-card>
+  </ion-card-content>
+</ion-card>
+
+<ion-modal [isOpen]="isModalOpen">
+  <ng-template>
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+          <ion-button (click)="setOpen(false)">Cerrar</ion-button>
+        </ion-buttons>
+        <ion-title>Respuesta {{answerSelected?.id}}</ion-title>   
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-item>
+        <ion-label position="stacked">ID</ion-label>
+        <p>{{answerSelected?.id}}</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">ID respuesta</ion-label>
+        <p>{{answerSelected?.idRespuesta}}</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Genero</ion-label>
+        <p>{{answerSelected.Genero}}</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Grupo etnico</ion-label>
+        <p>{{answerSelected.GrupEtnico}}</p>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="stacked">Intervalo edad</ion-label>
+        <p>{{answerSelected.IntervaloEdad}}</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Numero identificacion</ion-label>
+        <p>{{answerSelected.NumeroIdentificacion}}</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Zona</ion-label>
+        <p>{{answerSelected.Zona}}</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Condicion de discaacidad</ion-label>
+        <p>{{answerSelected.condicion_discapacidad}}</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">conflicto_armado</ion-label>
+        <p>{{answerSelected.conflicto_armado}}</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Fecha de creacion</ion-label>
+        <p>{{answerSelected.date_created | date}}</p>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="stacked">Municipio</ion-label>
+        <p>{{answerSelected.id_MarquesasApp_Municipio_id}}</p>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="stacked">ID encuesta</ion-label>
+        <p>{{answerSelected.id_WebTablasBasicasApp_encuesta_id}}</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">sexo</ion-label>
+        <p>{{answerSelected.sexo}}</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Nombre encuesta</ion-label>
+        <p>{{answerSelected.surveyName}}</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Usuario</ion-label>
+        <p>{{answerSelected.usuario}}</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Imagen</ion-label>
+        <img src="{{answerSelected.img}}" alt="">
+      </ion-item>
+    </ion-content>
+  </ng-template>
+</ion-modal>

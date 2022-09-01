@@ -100,6 +100,9 @@
                                 <a href="#deleteSurveyId" >deleteSurveyId</a>
                             </li>
                             <li>
+                                <a href="#getAllAnswersFromDb" >getAllAnswersFromDb</a>
+                            </li>
+                            <li>
                                 <a href="#getAllSurveys" >getAllSurveys</a>
                             </li>
                             <li>
@@ -322,6 +325,51 @@
                     </div>
                     <div class="io-description">
                         <p>retorna la respuesta de confirmacion</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllAnswersFromDb"></a>
+                    <span class="name">
+                        <span ><b>getAllAnswersFromDb</b></span>
+                        <a href="#getAllAnswersFromDb"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAllAnswersFromDb()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/app/services/survey/survey.service.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Funcion que consulta todas las respuestas de base de datos</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>retronar el array con las respeustas</p>
 
                     </div>
                 </td>
@@ -658,6 +706,14 @@ export class SurveyService {
     return this.httpClient.delete(&#x60;${this.baseUrl}survey/${id}&#x60;);
   }
 
+
+  /**
+   * Funcion que consulta todas las respuestas de base de datos
+   * @returns retronar el array con las respeustas 
+   */
+  getAllAnswersFromDb(){
+    return this.httpClient.get(&#x60;${this.baseUrl}answers&#x60;);
+  }
 
 
 
