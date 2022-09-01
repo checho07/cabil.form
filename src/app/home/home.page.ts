@@ -34,7 +34,8 @@ export class HomePage {
     componentProps: { value: 123 },
     backdropDismiss:false,
     animated:true,
-    mode:'ios'
+    mode:'ios',
+    cssClass:'glassEffect'
     });
   
     await modal.present();
