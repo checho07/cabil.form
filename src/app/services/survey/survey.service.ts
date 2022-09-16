@@ -11,7 +11,7 @@ export class SurveyService {
   /** 
    * URL base de la API
    */
-  private baseUrl = 'https://cabilapp.herokuapp.com/';
+  private baseUrl = 'https://cabilapi.herokuapp.com/';
 
   constructor(private httpClient: HttpClient) { }
 
